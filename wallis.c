@@ -5,7 +5,6 @@
 
 float wallis_pi(int);
 
-
 int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
@@ -25,13 +24,11 @@ int main(void) {
   }
 }
 float wallis_pi(int n)
-{
- float product;
- product=2.0;
- int i,j;
- for(i=1;i<n+1;i++)
- {
-  product=(product*4*i*i)/(4*i*i-1);
- }
- return product;
+  { float p=1;
+  for(int i=1;i<=n ;i++)
+  {float e=4*i*i;
+  float k=(float)e/(e-1);
+  p=p*k;
+  }return p*2;
+
 }
