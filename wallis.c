@@ -29,4 +29,7 @@ float wallis_pi(int n)
   float k=(float)e/(e-1);
   p=p*k;
   }return p*2;
+   
+   
+   
   }
